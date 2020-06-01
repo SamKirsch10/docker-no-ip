@@ -16,7 +16,7 @@ do
   /files/noip2-x86_64 -c "$GENERATED_CONFIG_FILE"
 
   # Give it a few seconds to do the first update. This helps avoid questions about "Last IP Address set 0.0.0.0"
-  sleep 15
+  sleep 5
 
   while true
   do

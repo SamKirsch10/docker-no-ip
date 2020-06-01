@@ -46,7 +46,7 @@ exec env - PATH=$PATH runsvdir -P /etc/service &
 RUNSVDIR=$!
 echo "Started runsvdir, PID is $RUNSVDIR. Waiting for processes to start...."
 
-sleep 5
+sleep 15
 for _srv in $(ls -1 /etc/service); do
     sv status $_srv
 done
