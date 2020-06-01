@@ -166,6 +166,8 @@ then
   exit 0
 fi
 
+sleep 10
+
 SAFE_CONFIG_FILE=$(create_and_validate_config_file)
 
 merge_config_vars_and_env_vars $SAFE_CONFIG_FILE
